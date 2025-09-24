@@ -1,0 +1,27 @@
+{
+  "name": "learn.eliapps.com",
+  "version": "1.0.0",
+  "description": "Learn and get started with anything.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elitalpa/learn.eliapps.com.git"
+  },
+  "keywords": [],
+  "author": "elitalpa",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/elitalpa/learn.eliapps.com/issues"
+  },
+  "homepage": "https://github.com/elitalpa/learn.eliapps.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0"
+  }
+}

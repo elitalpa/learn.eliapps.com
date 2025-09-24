@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ lang or 'en' }}" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}{% if title %} - {% endif %}{{ 'siteTitle' | content(lang) }}</title>
+  <meta name="description" content="{{ description or ('siteDescription' | content(lang)) }}">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/css/style.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/syntax-highlight.css">
+
+  <!-- Plausible -->
+  <script defer data-domain="learn.eliapps.com" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.tagged-events.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+  <!-- Theme detection script (inline to prevent FOUC) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 
+                   (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/{{ lang or 'en' }}/" class="nav-logo">
+          <span class="logo-text">{{ 'siteTitle' | content(lang) }}</span>
+        </a>
+        
+        <div class="nav-controls">
+          <!-- Language switcher -->
+          <div class="language-switcher">
+            <button class="lang-toggle" aria-label="{{ 'switchLanguage' | t(lang) }}">
+              <span class="lang-current">{{ (lang | langInfo).nativeName or 'EN' }}</span>
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="lang-menu">
+              {% if lang != 'en' %}
+              <li>
+                <a href="/en{{ page.url | urlWithoutLang }}" hreflang="en">English</a>
+              </li>
+              {% endif %}
+              {% if lang != 'fr' %}
+              <li>
+                <a href="/fr{{ page.url | urlWithoutLang }}" hreflang="fr">Français</a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+          
+          <!-- Dark mode toggle -->
+          <button class="theme-toggle" aria-label="{{ 'toggleTheme' | t(lang) }}">
+            <svg class="theme-icon theme-icon--light" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <svg class="theme-icon theme-icon--dark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-left">&copy; {{ site.year or '2025' }} {{ site.author or 'EliTalpa' }}. Licensed under <a href="https://github.com/elitalpa/learn.eliapps.com/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">{{ site.license or 'CC-BY-SA-4.0' }}</a>.</p>
+        <a href="https://github.com/elitalpa/learn.eliapps.com" target="_blank" rel="noopener noreferrer" class="github-star-btn">⭐ Star on GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/copy-code.js"></script>
+  <script src="/js/lang-switcher.js"></script>
+</body>
+</html> 

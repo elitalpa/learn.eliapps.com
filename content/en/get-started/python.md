@@ -1,3 +1,11 @@
+---
+layout: base.njk
+title: Get Started with Python
+description: Learn how to set up and get started with Python development
+lang: en
+permalink: /en/get-started/python/
+---
+
 # Get Started with Python
 
 ## Possible Setups:

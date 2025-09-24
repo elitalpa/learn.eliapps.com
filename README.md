@@ -1,10 +1,16 @@
-# learn.eliapps.com
+# Learn from EliApps
 
 Learn and get started with anything.
 
 ## Get Started
 
-Programming Languages:
+Visit the website: **[learn.eliapps.com](https://learn.eliapps.com)**
 
-- [Python](./get-started/python.md)
-- [JavaScript](./get-started/javascript.md)
+Or view the content in markdown format:
+- [English](./content/en/index.md)
+- [French](./content/fr/index.md)
+
+## License
+
+@elitalpa  
+Content is licensed under **[CC-BY-SA-4.0](LICENSE)**

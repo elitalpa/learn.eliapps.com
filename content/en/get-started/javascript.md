@@ -1,3 +1,11 @@
+---
+layout: base.njk
+title: Get Started with JavaScript
+description: Learn how to set up and get started with JavaScript development
+lang: en
+permalink: /en/get-started/javascript/
+---
+
 # Get Started with JavaScript
 
 ## Possible Setups:

@@ -1,0 +1,147 @@
+/* Syntax highlighting for code blocks */
+/* Light theme syntax highlighting */
+:root {
+  --syntax-bg: #f8fafc;
+  --syntax-text: #334155;
+  --syntax-comment: #64748b;
+  --syntax-keyword: #dc2626;
+  --syntax-string: #059669;
+  --syntax-number: #d97706;
+  --syntax-function: #2563eb;
+  --syntax-variable: #7c3aed;
+  --syntax-operator: #1f2937;
+}
+
+/* Dark theme syntax highlighting */
+[data-theme="dark"] {
+  --syntax-bg: #1e293b;
+  --syntax-text: #e2e8f0;
+  --syntax-comment: #94a3b8;
+  --syntax-keyword: #f87171;
+  --syntax-string: #34d399;
+  --syntax-number: #fbbf24;
+  --syntax-function: #60a5fa;
+  --syntax-variable: #a78bfa;
+  --syntax-operator: #f3f4f6;
+}
+
+/* Base code highlighting */
+.highlight {
+  background-color: var(--syntax-bg);
+  color: var(--syntax-text);
+}
+
+/* Token styles */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: var(--syntax-text);
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--syntax-keyword);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--syntax-string);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--syntax-operator);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--syntax-keyword);
+  font-weight: 600;
+}
+
+.token.function,
+.token.class-name {
+  color: var(--syntax-function);
+  font-weight: 600;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--syntax-variable);
+}
+
+.token.number {
+  color: var(--syntax-number);
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Language-specific highlighting */
+.language-bash .token.function,
+.language-shell .token.function {
+  color: var(--syntax-function);
+}
+
+.language-json .token.property {
+  color: var(--syntax-string);
+}
+
+.language-json .token.string {
+  color: var(--syntax-variable);
+}
+
+/* Line highlighting */
+.highlight-line {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  margin-left: -1rem;
+}
+
+/* Line numbers */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid var(--color-border);
+  padding-right: 1rem;
+  margin-right: 1rem;
+  color: var(--syntax-comment);
+  font-size: 0.8em;
+  user-select: none;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+  content: counter(linenumber);
+  counter-increment: linenumber;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+} 
