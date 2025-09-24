@@ -3,6 +3,28 @@ module.exports = function(eleventyConfig) {
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Configure markdown-it with anchor plugin
+  const markdownIt = require("markdown-it");
+  const markdownItAnchor = require("markdown-it-anchor");
+  
+  const markdownLib = markdownIt({
+    html: true,
+    breaks: false,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: markdownItAnchor.permalink.ariaHidden({
+      placement: "after",
+      class: "heading-anchor",
+      symbol: "#",
+      level: [1, 2, 3, 4, 5, 6],
+    }),
+    slugify: function(s) {
+      return s.trim().toLowerCase().replace(/[\s]+/g, "-").replace(/[^\w\-]+/g, "");
+    }
+  });
+  
+  eleventyConfig.setLibrary("md", markdownLib);
+
   // Copy assets to correct paths
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });

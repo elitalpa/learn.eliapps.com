@@ -454,4 +454,38 @@ pre code {
   }
   
   h1 { font-size: 1.75rem; }
+}
+
+/* Heading anchor links */
+.heading-anchor {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-weight: normal;
+}
+
+.heading-anchor:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+h1:hover .heading-anchor,
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor,
+h5:hover .heading-anchor,
+h6:hover .heading-anchor {
+  opacity: 1;
+}
+
+/* Make sure headings have relative positioning for anchor placement */
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+}
+
+/* Adjust scroll padding to account for fixed header when jumping to anchors */
+html {
+  scroll-padding-top: 5rem;
 } 
