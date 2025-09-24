@@ -1,0 +1,20 @@
+{
+  "name": "learn.eliapps.com",
+  "version": "1.0.0",
+  "description": "Learn and get started with anything.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elitalpa/learn.eliapps.com.git"
+  },
+  "keywords": [],
+  "author": "elitalpa",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/elitalpa/learn.eliapps.com/issues"
+  },
+  "homepage": "https://github.com/elitalpa/learn.eliapps.com#readme"
+}
