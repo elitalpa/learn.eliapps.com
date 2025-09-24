@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/elitalpa/learn.eliapps.com/issues"
   },
-  "homepage": "https://github.com/elitalpa/learn.eliapps.com#readme"
+  "homepage": "https://github.com/elitalpa/learn.eliapps.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
 }
