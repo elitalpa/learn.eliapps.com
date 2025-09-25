@@ -14,14 +14,14 @@ Programming Languages:
 
 <div class="card">
 
-### [Python](./get-started/python/)
+### [Python](./get-started/python.md)
 Learn how to set up and get started with Python development, from basic setup to modern tools like uv.
 
 </div>
 
 <div class="card">
 
-### [JavaScript](./get-started/javascript/)
+### [JavaScript](./get-started/javascript.md)
 Learn how to set up and get started with JavaScript development, from Node.js basics to modern tools like pnpm.
 
 </div> 
