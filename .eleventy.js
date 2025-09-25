@@ -3,14 +3,31 @@ module.exports = function(eleventyConfig) {
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // Configure markdown-it with anchor plugin
+  // Configure markdown-it with anchor plugin and link replacement
   const markdownIt = require("markdown-it");
   const markdownItAnchor = require("markdown-it-anchor");
+  const markdownItReplaceLink = require("markdown-it-replace-link");
   
   const markdownLib = markdownIt({
     html: true,
     breaks: false,
     linkify: true
+  }).use(markdownItReplaceLink, {
+    replaceLink: function(link) {
+      // Transform .md links to proper URLs
+      if (link.endsWith('.md') && !link.startsWith('http')) {
+        // Remove .md extension and add trailing slash
+        let newLink = link.replace(/\.md$/, '/');
+        
+        // Handle relative paths starting with ./
+        if (newLink.startsWith('./')) {
+          newLink = newLink.substring(2);
+        }
+        
+        return newLink;
+      }
+      return link;
+    }
   }).use(markdownItAnchor, {
     permalink: markdownItAnchor.permalink.ariaHidden({
       placement: "after",
