@@ -11,7 +11,7 @@ permalink: /en/get-started/python/
 ## Possible Setups:
 
 - [**Basic setup:** using default tools](#basic-setup)
-- [**Best setup (recommended):** using modern tools that are better and more efficient](#best-setup)
+- [**Better setup (recommended):** using modern tools that are better and more efficient](#better-setup)
 
 ## Basic Setup
 
@@ -40,6 +40,17 @@ Activate it:
 source .venv/bin/activate
 # or (depending on your system)
 source .venv/Scripts/activate
+```
+
+Check if venv is active:
+
+```sh
+# checking the env variable
+echo $VIRTUAL_ENV
+# should output something if venv is active
+
+# or using python code to check
+python -c "import sys; print('venv active' if sys.prefix != sys.base_prefix else 'no venv')"
 ```
 
 ### 2. Running a Python File
@@ -89,6 +100,9 @@ source .venv/bin/activate
 # or (depending on your system)
 source .venv/Scripts/activate
 
+# Check if venv is active
+echo $VIRTUAL_ENV
+
 # Install libraries
 pip install -r requirements.txt
 
@@ -96,7 +110,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Best Setup
+## Better Setup
 
 Instead of using the default Python tools, you can use [uv](https://docs.astral.sh/uv/) from [Astral](https://astral.sh).
 

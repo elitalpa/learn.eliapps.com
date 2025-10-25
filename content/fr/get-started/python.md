@@ -42,6 +42,17 @@ source .venv/bin/activate
 source .venv/Scripts/activate
 ```
 
+Vérifiez si venv est activé :
+
+```sh
+# vérifier la variable d'environnement
+echo $VIRTUAL_ENV
+# devrait afficher quelque chose si venv est actif
+
+# ou utiliser du code python pour vérifier
+python -c "import sys; print('venv active' if sys.prefix != sys.base_prefix else 'no venv')"
+```
+
 ### 2. Exécuter un Fichier Python
 
 Créez un fichier `main.py` avec le code :
@@ -88,6 +99,9 @@ python -m venv .venv
 source .venv/bin/activate
 # ou (selon votre système)
 source .venv/Scripts/activate
+
+# Vérifier si venv est activé
+echo $VIRTUAL_ENV
 
 # Installer les bibliothèques
 pip install -r requirements.txt
@@ -147,4 +161,4 @@ uv run main.py
 # uv gère tout automatiquement :
 # - Crée l'environnement virtuel (.venv) et l'utilise
 # - Installe les bibliothèques avant d'exécuter le fichier Python
-``` 
+```
