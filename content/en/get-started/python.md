@@ -42,6 +42,17 @@ source .venv/bin/activate
 source .venv/Scripts/activate
 ```
 
+Check if venv is active:
+
+```sh
+# checking the env variable
+echo $VIRTUAL_ENV
+# should output something if venv is active
+
+# or using python code to check
+python -c "import sys; print('venv active' if sys.prefix != sys.base_prefix else 'no venv')"
+```
+
 ### 2. Running a Python File
 
 Create a `main.py` file with the code:
@@ -88,6 +99,9 @@ python -m venv .venv
 source .venv/bin/activate
 # or (depending on your system)
 source .venv/Scripts/activate
+
+# Check if venv is active
+echo $VIRTUAL_ENV
 
 # Install libraries
 pip install -r requirements.txt
