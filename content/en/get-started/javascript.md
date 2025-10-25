@@ -11,7 +11,7 @@ permalink: /en/get-started/javascript/
 ## Possible Setups:
 
 - [**Basic setup:** using default tools](#basic-setup)
-- [**Best setup (recommended):** using improved tools that are better and more efficient](#best-setup)
+- [**Better setup (recommended):** using improved tools that are better and more efficient](#better-setup)
 
 ## Basic Setup
 
@@ -76,7 +76,7 @@ npm install
 node main.js
 ```
 
-## Best Setup
+## Better Setup
 
 Instead of using the default Node.js tools, you can use [nvm](https://github.com/nvm-sh/nvm) for Node.js version management and [pnpm](https://pnpm.io/) as a faster, more efficient package manager.
 

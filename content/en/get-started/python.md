@@ -11,7 +11,7 @@ permalink: /en/get-started/python/
 ## Possible Setups:
 
 - [**Basic setup:** using default tools](#basic-setup)
-- [**Best setup (recommended):** using modern tools that are better and more efficient](#best-setup)
+- [**Better setup (recommended):** using modern tools that are better and more efficient](#better-setup)
 
 ## Basic Setup
 
@@ -96,7 +96,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Best Setup
+## Better Setup
 
 Instead of using the default Python tools, you can use [uv](https://docs.astral.sh/uv/) from [Astral](https://astral.sh).
 
