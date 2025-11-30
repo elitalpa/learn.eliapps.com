@@ -11,3 +11,9 @@ permalink: /en/get-started/go/
 ## Setup
 
 Go can be installed from: https://go.dev/doc/install
+
+Once installed, you can check the version:
+
+```sh
+go version
+```
