@@ -8,7 +8,7 @@ permalink: /fr/get-started/typescript/
 
 # Commencer avec TypeScript
 
-TypeScript c'est [JavaScript](./javascript.md) avec des types, une syntaxe améliorée et de meilleurs outils.
+TypeScript est [JavaScript](./javascript.md) avec des types, une syntaxe améliorée et de meilleurs outils.
 
 ## Configurations Possibles :
 
