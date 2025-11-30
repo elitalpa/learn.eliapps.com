@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- pnpm
+- [pnpm](https://pnpm.io/)
 
 ## Setup
 
