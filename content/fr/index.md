@@ -15,6 +15,7 @@ Langages de Programmation :
 <div class="card">
 
 ### [Python](./get-started/python.md)
+
 Apprenez à configurer et commencer le développement Python, de la configuration de base aux outils modernes comme uv.
 
 </div>
@@ -22,6 +23,15 @@ Apprenez à configurer et commencer le développement Python, de la configuratio
 <div class="card">
 
 ### [JavaScript](./get-started/javascript.md)
+
 Apprenez à configurer et commencer le développement JavaScript, des bases de Node.js aux outils modernes comme pnpm.
 
-</div> 
+</div>
+
+<div class="card">
+
+### [TypeScript](./get-started/typescript.md)
+
+Apprenez à configurer et commencer le développement TypeScript.
+
+</div>
