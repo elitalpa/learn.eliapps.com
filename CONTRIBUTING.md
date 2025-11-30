@@ -17,8 +17,11 @@ Start it and open the url mentioned (by default: http://localhost:8080 except if
 pnpm run start
 ```
 
-## After making changes
+## Submit changes
 
+Check if it builds correctly
 ```sh
 pnpm run build
 ```
+
+If everything is ok, you can create a Pull Request to submit your changes.
