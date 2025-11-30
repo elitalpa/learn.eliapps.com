@@ -12,7 +12,7 @@ Install libraries
 pnpm i
 ```
 
-Start it and open the url mentioned (by default: http://localhost:8080 except if port is already in use)
+Start it and open the url mentioned (http://localhost:8080 by default except if port is already in use)
 ```sh
 pnpm run start
 ```
