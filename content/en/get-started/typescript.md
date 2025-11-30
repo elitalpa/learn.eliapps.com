@@ -12,7 +12,7 @@ TypeScript is [JavaScript](./javascript.md) with types, improved syntax, and bet
 
 ## Possible Setups:
 
-- [**Basic setup:** using te default tool](#basic-setup)
+- [**Basic setup:** using the default tool](#basic-setup)
 - [**Better setup (recommended):** using the modern tool that is better and more efficient](#better-setup)
 
 ## Basic Setup
