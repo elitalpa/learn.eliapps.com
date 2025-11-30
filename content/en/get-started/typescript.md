@@ -8,6 +8,8 @@ permalink: /en/get-started/typescript/
 
 # Get Started with TypeScript
 
+TypeScript is [JavaScript](./javascript.md) with types, improved syntax, and better tooling.
+
 ## Possible Setups:
 
 - [**Basic setup:** using te default tool](#basic-setup)
