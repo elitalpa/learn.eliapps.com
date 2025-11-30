@@ -10,6 +10,10 @@ Or view the content in markdown format:
 - [English](./content/en/index.md)
 - [French](./content/fr/index.md)
 
+## Contributing
+
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+
 ## License
 
 @elitalpa  
