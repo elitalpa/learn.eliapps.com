@@ -25,6 +25,44 @@ Once installed, you can check the version:
 tsc --version
 ```
 
+### 1. Project Initialization
+
+Initialize a project:
+
+```sh
+tsc --init
+```
+
+This creates a `tsconfig.json` file for configuration.
+
+### 2. Running a TypeScript File
+
+Create a `main.ts` file with the code:
+
+```typescript
+console.log("Hello World");
+```
+
+Run the file:
+
+```sh
+# transpile ts into js
+tsc # or tsc main.ts
+
+# run the transpiled code
+node main.js
+```
+
+### When getting back to a project
+
+```sh
+# transpile
+tsc
+
+# run
+node main.js
+```
+
 ## Better Setup
 
 Instead of using the default TypeScript `tsc`, you can use [tsx](https://tsx.is/)
@@ -35,4 +73,28 @@ Once installed, you can check the version:
 
 ```sh
 tsx --version
+```
+
+### 1. Project Initialization
+
+Initializing and creating a `tsconfig.json` file is optional.
+
+### 2. Running a TypeScript File
+
+Create a `main.ts` file with the code:
+
+```typescript
+console.log("Hello World");
+```
+
+Run the file:
+
+```sh
+tsx main.ts
+```
+
+### When getting back to a project
+
+```sh
+tsx main.ts
 ```
