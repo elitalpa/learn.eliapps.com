@@ -7,3 +7,7 @@ permalink: /en/get-started/go/
 ---
 
 # Get Started with Go
+
+## Setup
+
+Go can be installed from: https://go.dev/doc/install
