@@ -34,3 +34,23 @@ go mod init example/hello
 ```
 
 Ceci crée un fichier `go.mod` qui définit le nom de votre module et stockera les informations des dépendances.
+
+### 2. Exécuter un fichier Go
+
+Créez un fichier `main.go` avec :
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Bonjour le monde!")
+}
+```
+
+Exécutez le programme :
+
+```sh
+go run .
+```
