@@ -54,3 +54,39 @@ Exécutez le programme :
 ```sh
 go run .
 ```
+
+### 3. Installer et utiliser des bibliothèques
+
+Modifiez `main.go` pour utiliser un paquet externe :
+
+```go
+package main
+
+import (
+    "fmt"
+    "rsc.io/quote"
+)
+
+func main() {
+    fmt.Println(quote.Go())
+}
+```
+
+Demandez à Go de résoudre et télécharger les dépendances :
+
+```sh
+go mod tidy
+```
+
+Cela va :
+
+- Ajouter le module `rsc.io/quote` à `go.mod`
+- Créer ou mettre à jour `go.sum` avec les sommes de contrôle
+
+Exécutez à nouveau le programme :
+
+```sh
+go run .
+```
+
+Vous devriez voir une citation liée à Go s’afficher.
