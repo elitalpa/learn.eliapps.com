@@ -1,6 +1,5 @@
-const { InputPathToUrlTransformPlugin } = require("@11ty/eleventy");
-
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+  const { InputPathToUrlTransformPlugin } = await import("@11ty/eleventy");
   // Add syntax highlighting
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight);
