@@ -99,3 +99,20 @@ Go has a built-in formatter so your code style is consistent:
 # Format the current package
 go fmt
 ```
+
+### When Getting Back to a Project
+
+When you return to an existing Go project:
+
+```sh
+cd hello
+
+# Make sure dependencies are up to date
+go mod tidy
+
+# Run your program
+go run .
+```
+
+Go will automatically download any missing dependencies defined in `go.mod`.
+
