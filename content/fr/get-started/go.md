@@ -99,3 +99,19 @@ Go possède un formateur intégré afin que le style de votre code reste cohére
 # Formater le paquet courant
 go fmt
 ```
+
+### Quand vous revenez sur un projet
+
+Lorsque vous revenez sur un projet Go existant :
+
+```sh
+cd hello
+
+# Assurez‑vous que les dépendances sont à jour
+go mod tidy
+
+# Exécutez votre programme
+go run .
+```
+
+Go téléchargera automatiquement toutes les dépendances manquantes définies dans `go.mod`.
