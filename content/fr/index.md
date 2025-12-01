@@ -35,3 +35,12 @@ Apprenez à configurer et commencer le développement JavaScript, des bases de N
 Apprenez à configurer et commencer le développement TypeScript.
 
 </div>
+
+<div class="card">
+
+### [Go](./get-started/go.md)
+
+Apprenez à configurer et à démarrer avec le langage de programmation Go.
+
+</div>
+
