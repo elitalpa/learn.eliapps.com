@@ -90,3 +90,12 @@ go run .
 ```
 
 You should see a Go-related quote printed.
+
+### 4. Formatting Your Code
+
+Go has a built-in formatter so your code style is consistent:
+
+```sh
+# Format the current package
+go fmt
+```
