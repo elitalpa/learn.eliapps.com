@@ -35,3 +35,11 @@ Learn how to set up and get started with JavaScript development, from Node.js ba
 Learn how to set up and get started with TypeScript development.
 
 </div>
+
+<div class="card">
+
+### [Go](./get-started/go.md)
+
+Learn how to set up and get started with the Go programming language.
+
+</div>
