@@ -54,3 +54,39 @@ Run the program:
 ```sh
 go run .
 ```
+
+### 3. Installing and using Libraries
+
+Edit `main.go` to use an external package:
+
+```go
+package main
+
+import (
+    "fmt"
+    "rsc.io/quote"
+)
+
+func main() {
+    fmt.Println(quote.Go())
+}
+```
+
+Tell Go to resolve and download dependencies:
+
+```sh
+go mod tidy
+```
+
+This will:
+
+- Add the `rsc.io/quote` module to `go.mod`
+- Create or update `go.sum` with checksums
+
+Run the program again:
+
+```sh
+go run .
+```
+
+You should see a Go-related quote printed.
