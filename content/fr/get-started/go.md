@@ -90,3 +90,12 @@ go run .
 ```
 
 Vous devriez voir une citation liée à Go s’afficher.
+
+### 4. Formater votre code
+
+Go possède un formateur intégré afin que le style de votre code reste cohérent :
+
+```sh
+# Formater le paquet courant
+go fmt
+```
