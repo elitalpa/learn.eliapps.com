@@ -17,3 +17,20 @@ Once installed, you can check the version:
 ```sh
 go version
 ```
+
+### 1. Project Initialization
+
+Create a new folder for your project and move into it:
+
+```sh
+mkdir hello
+cd hello
+```
+
+Initialize a Go module:
+
+```sh
+go mod init example/hello
+```
+
+This creates a `go.mod` file which defines your module name and will store dependency information.
